@@ -9,7 +9,10 @@
         <arg name="depth_topic" value="/camera/depth/image_raw"/>
         <arg name="camera_info_topic" value="/camera/color/camera_info"/>
         <arg name="depth_camera_info_topic" value="/camera/depth/camera_info"/>
+        <arg name="subscribe_scan_cloud"    default="true"/>
+        <arg name="scan_cloud_topic"        default="/scan_front"/>
         <arg name="rtabmapviz" value="false"/>
+        <!-- <arg name="scan_topic" value="/scan_front"/> -->
     </include>
 
     <include file="$(find robot_localization)/launch/ukf_template.launch"/>
